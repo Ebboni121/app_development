@@ -52,12 +52,17 @@ img {width: 100%; display: block; height: 100%;}
 }
 .footer > div{border: solid rgb(174, 154, 19);}
 
+
+/*---------breakpoint for  900 (tablet device)-----*/
+
 @media screen and (max-width:900px){
     .navmenu{background-color: blueviolet;}
     content{grid-column: span 2;}
     .blog{grid-column: span 3; }
     
 }
+
+/*---------breakpoint for  600px screen (smartphone device)-----*/
 @media screen and (max-width:600px){
     .navmenu{background-color: rgb(226, 84, 167); 
         grid-column: span 3;}
