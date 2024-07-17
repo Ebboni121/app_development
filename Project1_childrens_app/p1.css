@@ -1,0 +1,102 @@
+*{box-sizing: border-box;}
+html {scroll-behavior: smooth;}
+
+/*------GRID SYSTEM----*/
+img {width: 100%; display: block; height: 100%;}
+
+.grid-container{
+    display: grid;
+    grid-template-columns: auto auto ;
+    background-color: darkgray;
+   
+}
+
+
+
+
+.img-container{margin: 20px; width: 80%;
+   border: solid rgb(24, 177, 24); overflow: hidden;}
+
+.content {font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-style: oblique;
+    color: white;
+    font-weight: 800;
+ font-stretch: wider;
+ font-size: 130px;
+ font-display: center;
+
+
+}
+  
+
+
+
+/*---------MEDIA QUERY-----*/
+/*---------breakpoint for large screen up to 1200-----*/
+@media screen and (max-width:1200px) {.grid-container{background-color:yellow;
+    width: 100%;
+    grid-template-columns: auto auto;
+}}
+/*---------breakpoint for large screen up to 900-----*/
+@media screen and (max-width:900px) {.grid-container{background-color: blue;
+    width: 80%;
+    grid-template-columns: auto ;
+    
+}}
+
+/*---------Main container -----*/
+.headercontainer{background-color:yellow;color:green; display: flex;
+}
+.headercontainer > div{
+  
+    padding: 20px
+}
+.headercontainer > div:nth-child(3){margin-left: auto;}
+/* OR {margin 0 0 0 auto} {top bottom right left}*/
+
+/* intro container split into 2 sections using GRID*/
+ .introcontainer{
+    display: grid;
+    height: 200px;
+    grid-template-columns: 20% 80%;
+    animation: changeBackground 5s ease-in-out infinite alternate;
+ }
+ @keyframes changeBackground {
+    0%   {background-color: red;}
+    25%  {background-color: yellow;}
+    50%  {background-color: blue;}
+    100% {background-color: green;}
+  }
+
+
+
+ .navmenu{background-color: burlywood;}
+ .comtent {background-color: beige;}
+ 
+  
+ .footer {background-color:white;
+    color:black;
+    display: grid;
+    grid-template-columns:auto auto auto ;
+    height: 100px;
+}
+.footer > div{border: solid rgb(174, 154, 19);}
+
+
+/*---------breakpoint for  900 (tablet device)-----*/
+
+@media screen and (max-width:900px){
+    .navmenu{background-color: blueviolet;}
+    content{grid-column: span 2;}
+  
+    
+}
+
+/*---------breakpoint for  600px screen (smartphone device)-----*/
+@media screen and (max-width:600px){
+    .navmenu{background-color: rgb(226, 84, 167); 
+        grid-column: span 3;}
+    content{grid-column: span 3;background-color: crimson;}
+   
+    
+}

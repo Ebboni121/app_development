@@ -4,7 +4,7 @@
 /*-------_SHAPES_---------*/
 
 .shapecontainer{border: solid 3px pink;
-    width: 800px;
+width: 800px;
 margin: 20px auto;
 padding: 20px;
 text-align: center;
@@ -17,8 +17,6 @@ margin: 20px auto;
 }
 
 .square{
-width:200px;
-height: 200px;
 background-color: lightskyblue;
 color: azure;
 font-size: 1.5em;
