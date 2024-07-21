@@ -5,54 +5,30 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  box-sizing: border-box;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.title {
+text-align: center;
 }
 
-img {width: 100%; display: block;}
-
-.introimg{
-  border: ridge grey 20px;
-  border-radius: 12px;
-  width: 60%;
-  margin:auto
-
-}
-
-/*CARD DESIGN*/
-
-.cardcontainer{
+/*----NAV BARS.JS-----*/
+.navbar{
+  background-color: aliceblue;
   display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
-  margin-top: 30px;
+  padding: 20px;
 }
 
-.card{
-  width: 300px;
-  border: solid rgb(73, 118, 7) 5px;
-  border-radius: 12px;
-  margin: 15px;
-  text-align: center;
-  padding: 15px;
-  transition: ease-in-out 100ms;
+.navbar div:nth-child(2){
+  margin-left: auto;
+
 }
-.card:hover{
-  cursor: pointer;
-  box-shadow: 0px 0px 5px 1px greenyellow;
-  transform: translateY(-10px);
+.btngroup button{
+  padding: 0px 20px;
+  border: none;
+  background-color: aliceblue;
 }
-.content{
-  font-size: 1.2em;
+.btngroup button:hover {
   font-weight: bolder;
-}
-.metadata{
-  font-style: italic;
-  color: orange;
-}
-.comment{
-  color: blueviolet;
+  text-decoration: underline;
 }
