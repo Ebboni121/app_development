@@ -1,0 +1,184 @@
+body {background-color: rgb(233, 233, 239);color: green;
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  box-sizing: border-box;
+}
+.App-header {
+  background-color: #282c34;
+ padding-right: 20px;
+  display: flex;
+
+  font-size: calc(2px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+.title, h2 {
+text-align: center;
+}
+
+/*----NAV BARS.JS-----*/
+.navbar{
+  background-color:white;
+  display: flex;
+  padding: 20px;
+}
+
+.navbar div:nth-child(2){
+  margin-left: auto;
+
+}
+.btngroup button{
+  padding: 0px 20px;
+  border: none;
+  background-color: aliceblue;
+}
+.btngroup button:hover {
+  font-weight: bolder;
+  text-decoration: underline;
+}
+/*CARD DESIGN*/
+img {width: 100%; display: block;}
+
+.introimg{
+
+  border-radius: 12px;
+  width: 5%;
+  margin-right: auto;
+
+}
+
+.cardcontainer{
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-top: 30px;
+
+  
+}
+
+.card{
+  width: 300px;
+  border: solid rgb(73, 118, 7) 5px;
+  border-radius: 12px;
+  margin: 15px;
+  text-align: center;
+  padding: 15px;
+  transition: ease-in-out 100ms;
+  
+}
+.card:hover{
+  cursor: pointer;
+  box-shadow: 0px 0px 5px 1px greenyellow;
+  transform: translateY(-10px);
+}
+.content{
+  font-size: 1.2em;
+  font-weight: bolder;
+}
+.metadata{
+  font-style: italic;
+  color: orange;
+}
+.comment{
+  color: blueviolet;
+}
+.extrafacts> p {border: aliceblue solid 3px;
+  padding: 20px;
+  margin: 10px;
+  border-radius: 10px;
+}
+.button {
+  margin-left: 50% ;
+  background-color: green;
+  border: aliceblue;
+  color: aliceblue;
+  padding: 5px;
+  border-radius: 10px;
+  transition: ease-in-out;
+}
+.button:hover{
+  background-color: aliceblue;
+  color: green;
+  cursor: pointer;
+  box-shadow: 1px 1px 1px 1px ;
+}
+/* Modal */
+.modal-overlay {
+  position: fixed;
+  top: 20;
+  left: 30;
+  width:550px;
+  height: 300px;
+  background: rgba(0, 0, 0, 0.5);
+  display: wrap;
+  align-items: center;
+
+}
+
+.modal-content {
+  background: white;
+  padding: 90px;
+  border-radius: 8px;
+  width: 550px;
+height: 80%;
+ 
+}
+
+.modal-close {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background: none;
+  border: none;
+  font-size: 20px;
+  cursor: pointer;
+}
+.modal-message {
+  font-size: 18px; 
+  color: black; 
+  text-align: center; 
+  margin-top: 15px; 
+  line-height: 1.5; 
+}
+.modal-image {
+  width: 100%;
+  height: auto;
+  max-height: 70%; 
+  object-fit: contain; 
+}
+.sports {
+  margin: 10px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px; 
+}
+
+.sports img {
+  flex: 1 1 calc(33.333% - 10px); 
+  height: auto; 
+  object-fit: cover; 
+}
+.sports>img:hover{
+  cursor: pointer;
+  box-shadow: 5px 5px 5px 1px rgb(117, 187, 11);
+}
+
+.signupform{width: 80%;
+  margin: auto}
+  
+  .formcontrol{margin-top: 10px;}
+  
+  .formcontrol label{margin-top: 20px;
+  display: inline-block;
+  width: 100px;}
+
+  #comments {width: 1000px;
+  height: 150px;}
