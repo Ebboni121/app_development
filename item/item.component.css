@@ -1,0 +1,11 @@
+.component_title{background-color: dodgerblue;}
+
+.cart, .stock{
+    background-color: rgb(25, 41, 54);
+    color: white;
+    cursor: pointer;
+}
+.cart:disabled, .stock:disabled{
+    background-color: beige;
+    cursor:not-allowed;
+}
