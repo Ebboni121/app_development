@@ -1,13 +1,37 @@
-<p>item works!</p>
-<h2 class="component_title"> this is an item component</h2>
-<p>welcome to Angular {{username}}</p>
-<section>
-    <p>Product {{itemname}} are in stock? {{getStockStatus()}}</p>
-    <button class="cart" [disabled]="isSoldOut">Add to Cart</button>
+<div class="productcontainer">
+    
+    <img src="assets/images/medal.avif" alt="goldmedal">
+
+<div class="title">
+   
+    <h3 class="itemname"> Paris Olympic Gold Medal</h3>
+    <p class="itemdescription">Medal for being the best of the best!</p>
+    <p class="itemprice"><s>$199</s> </p>
+        <b class="saleprice">99</b>
+</div>
+
+</div>
+
+<section class="info">
+    <form class="formitem" #form="ngForm" >
+        <label for="itemquantity" > Quantity</label>
+        <input class="quantityinput" type="number" id="quantityitem" [(ngModel)]="quantity" name="quantity" max="40" min="1" >
+
+        
+        </form>
+    
+    <button (click)="addProduct()" [disabled]="stock" class="stock">Add to Cart</button>
+    <p>{{productmsg}}</p>
+    <p>Only {{total_in_stock}} left!</p><span> {{outStock}}</span>
 </section>
-<h2>Event Binding</h2>
-<button (click)="onSave()">Save</button>
-<button (click)="addProduct()" [disabled]="stock" class="stock">Add Product</button>
-<p>{{productmsg}}</p>
-<p>Only {{total_in_stock}} left!</p><span> {{outStock}}</span>
-<p> Total of {{total_added}} items added to cart</p>
+<div class="info" *ngIf="total_added > 0">
+    <p>  {{total_added}} items added to cart</p>
+    <p>Total cost: ${{total_cost.toFixed(2)}}</p> 
+</div>
+
+
+
+
+<p class="thankyou">Thank You for shopping with us {{username}} !</p>
+
+

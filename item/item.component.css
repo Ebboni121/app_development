@@ -1,11 +1,55 @@
-.component_title{background-color: dodgerblue;}
+.productcontainer{background-color: rgb(200, 223, 246);
+width: 500px;
+height: 500px;
+margin: auto;
+margin-bottom: 70px;
+padding-top: 10px;}
 
 .cart, .stock{
-    background-color: rgb(25, 41, 54);
-    color: white;
+    background-color: darkblue;
+    color: whitesmoke;
     cursor: pointer;
+    padding: 5px;
+    border-radius: 3px;
+    margin-top: 5px;
 }
 .cart:disabled, .stock:disabled{
     background-color: beige;
     cursor:not-allowed;
 }
+
+.info{
+    border: solid 4px darkblue;
+    background-color: aliceblue;
+   margin: auto;
+   margin-bottom: 5px;
+    width: 250px;
+    padding: 15px;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    color: darkblue;
+}
+img {
+    width: 200px;
+    height: 300px;
+    padding: 10px;
+  
+    margin: auto;
+    display: block;
+  border: 5px solid white;
+}
+.title{
+
+    text-align: center;
+    text-decoration: dotted;
+    font-weight: 200;
+    color: darkblue;
+    font-family: Arial, Helvetica, sans-serif;
+
+}
+.saleprice {font-size: larger;
+    color: brown;
+}
+.thankyou {text-align: center;
+font-family: Arial, Helvetica, sans-serif;
+color: darkblue;}
